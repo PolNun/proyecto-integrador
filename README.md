@@ -1,1 +1,1 @@
-# proyecto-integrador
+# Proyecto integrador

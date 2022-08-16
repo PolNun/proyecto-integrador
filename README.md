@@ -1,3 +1,1 @@
 # Proyecto Integrador
-
-### Pablo Nuñez

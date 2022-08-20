@@ -1,20 +1,22 @@
 // abstracts
-@use '';
 
 // vendors
-@use '';
+@use 'vendors/normalize';
 
 // base
-@use '';
+@use 'base/reset';
+@use 'base/utilities';
 
 // layout
-@use '';
+@use 'layout/hamburger-button';
+@use 'layout/main-header';
+@use 'layout/main-nav';
+@use 'layout/main-nav-toggle';
 
 // components
-@use '';
+@use 'components/card';
 
 // pages
-@use '';
+@use 'pages/index';
 
 // themes
-@use '';

@@ -14,13 +14,17 @@
     <input type="checkbox" class="main-nav-toggle" id="main-nav-toggle">
     <header class="main-header">
         <div class="main-header__logo-container">
-            Logo
+            <img class="logo-header" src="img/logo/logo-cosmica-small.svg" alt="logo Juguetería Cósmica">
         </div>
         <div class="main-header__search-form-container">
-            Form
+            <form class="search-form">
+                <label class="search-form__label" for="input-browse-product">Buscar</label>
+                <input class="search-form__input" type="text" id="input-browse-product">
+                <button class="btn-search-product"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></button>
+            </form>
         </div>
         <div class="main-header__cart-button-container">
-            Cart
+            <i class="fa-solid fa-cart-shopping"></i>
         </div>
         <div class="main-header__hamburger-button-container">
             <label class="hamburger-button" for="main-nav-toggle" title="Alternar la barra de navegación">
@@ -51,13 +55,26 @@
     </header>
 
     <main>
+        <section class="section-hero">
+            <div class="section-hero__container">
+                <div class="section-hero__text-container">
+                    <h1 class="section-hero__title">Juguetería Cósmica</h1>
+                    <img class="section-hero__image" src="img/logo-cosmica-big.svg">
+                    <p class="section-hero__description">La mejor juguetería de la galaxia</p>
+                </div>
+                <div class="section-hero__image-container">
+                </div>
+            </div>
+        </section>
+
         <section class="section-cards">
             <header class="section-cards__header">
                 <h1>Productos</h1>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Los destacados para vos</p>
             </header>
 
             <div class="cards-container">
+
                 <div class="card">
                     <a href="" class="card__link-add">Agregar</a>
                     <article class="card__article">
@@ -80,7 +97,7 @@
                         </picture>
                         <div class="card__content">
                             <h2 class="card__heading">Pelota</h2>
-                            <div class="card_description">
+                            <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, id.</p>
                             </div>
                         </div>
@@ -94,7 +111,7 @@
                         </picture>
                         <div class="card__content">
                             <h2 class="card__heading">Pelota</h2>
-                            <div class="card_description">
+                            <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, id.</p>
                             </div>
                         </div>
@@ -108,7 +125,7 @@
                         </picture>
                         <div class="card__content">
                             <h2 class="card__heading">Pelota</h2>
-                            <div class="card_description">
+                            <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, id.</p>
                             </div>
                         </div>
@@ -122,7 +139,7 @@
                         </picture>
                         <div class="card__content">
                             <h2 class="card__heading">Pelota</h2>
-                            <div class="card_description">
+                            <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, id.</p>
                             </div>
                         </div>
@@ -136,7 +153,7 @@
                         </picture>
                         <div class="card__content">
                             <h2 class="card__heading">Pelota</h2>
-                            <div class="card_description">
+                            <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, id.</p>
                             </div>
                         </div>
@@ -150,7 +167,7 @@
                         </picture>
                         <div class="card__content">
                             <h2 class="card__heading">Pelota</h2>
-                            <div class="card_description">
+                            <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, id.</p>
                             </div>
                         </div>
@@ -164,7 +181,7 @@
                         </picture>
                         <div class="card__content">
                             <h2 class="card__heading">Pelota</h2>
-                            <div class="card_description">
+                            <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, id.</p>
                             </div>
                         </div>
@@ -178,24 +195,63 @@
                         </picture>
                         <div class="card__content">
                             <h2 class="card__heading">Pelota</h2>
-                            <div class="card_description">
+                            <div class="card__description">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, id.</p>
                             </div>
                         </div>
                     </article>
                 </div>
-            </div>
+                <div class="card">
+                    <a href="" class="card__link-add">Agregar</a>
+                    <article class="card__article">
+                        <picture class="card__image-container">
+                            <img src="" alt="" class="card__image">
+                        </picture>
+                        <div class="card__content">
+                            <h2 class="card__heading">Pelota</h2>
+                            <div class="card__description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, id.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="card">
+                    <a href="" class="card__link-add">Agregar</a>
+                    <article class="card__article">
+                        <picture class="card__image-container">
+                            <img src="" alt="" class="card__image">
+                        </picture>
+                        <div class="card__content">
+                            <h2 class="card__heading">Pelota</h2>
+                            <div class="card__description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, id.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="card">
+                    <a href="" class="card__link-add">Agregar</a>
+                    <article class="card__article">
+                        <picture class="card__image-container">
+                            <img src="" alt="" class="card__image">
+                        </picture>
+                        <div class="card__content">
+                            <h2 class="card__heading">Pelota</h2>
+                            <div class="card__description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, id.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
 
-            <footer class="section-cards__footer">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, in?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, a!</p>
-            </footer>
+            </div>
 
         </section>
     </main>
 
     <footer class="main-footer"></footer>
 
+    <script src="https://kit.fontawesome.com/48e10fc4fc.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

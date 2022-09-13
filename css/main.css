@@ -363,6 +363,15 @@ body {
   text-align: justify !important;
 }
 
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+  font-display: swap;
+}
 .hamburger-button {
   display: block;
   cursor: pointer;
@@ -407,37 +416,51 @@ body {
 .main-header {
   display: flex;
   flex-wrap: wrap;
+  background-color: #e9f5f8;
 }
 .main-header__logo-container {
-  background-color: #944;
-  padding: 1em;
-  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
 }
-@media (min-width: 768px) {
-  .main-header__logo-container {
-    flex-basis: 15%;
-  }
+.main-header__logo-container .logo-header {
+  width: 3em;
+  filter: drop-shadow(0 0 0.3em #444);
 }
 .main-header__search-form-container {
-  background-color: #494;
   padding: 1em;
   flex-grow: 1;
 }
 @media (min-width: 768px) {
   .main-header__search-form-container {
     order: 2;
-    flex-basis: 15rem;
     flex-grow: 0;
     flex-shrink: 1;
+    display: flex;
+    align-items: center;
   }
 }
+.main-header__search-form-container .search-form .btn-search-product {
+  background-color: #e9f5f8;
+  border: none;
+  cursor: pointer;
+}
+.main-header__search-form-container .search-form .search-form__input {
+  border: none;
+  border-bottom: 2px solid #03045E;
+  font-size: 1.2em;
+  outline: none;
+  font-weight: 500;
+  color: #03045E;
+}
 .main-header__cart-button-container {
-  background-color: #444;
   padding: 1em;
 }
 @media (min-width: 768px) {
   .main-header__cart-button-container {
     order: 3;
+    display: flex;
+    align-items: center;
   }
 }
 .main-header__hamburger-button-container {
@@ -450,26 +473,25 @@ body {
   }
 }
 .main-header__main-nav-container {
-  background-color: yellow;
   flex-basis: 100%;
   display: none;
   flex-grow: 1;
 }
 @media (min-width: 768px) {
   .main-header__main-nav-container {
-    display: block;
+    display: flex;
+    align-items: center;
     order: 1;
     flex-basis: auto;
   }
 }
 
 .main-nav {
-  background-color: #222;
+  width: 100%;
 }
 .main-nav__list {
   margin: 0;
   padding: 0;
-  background-color: pink;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -484,15 +506,15 @@ body {
 }
 .main-nav__link {
   display: block;
-  background-color: orange;
   padding: 1em 0.7em;
   color: #222;
   font-size: 1.2em;
   text-decoration: none;
 }
 .main-nav__link:hover, .main-nav__link:focus {
-  background-color: orangered;
+  background-color: #00B4D8;
   outline: none;
+  transition: 0.2s ease;
 }
 @media (min-width: 768px) {
   .main-nav__link {

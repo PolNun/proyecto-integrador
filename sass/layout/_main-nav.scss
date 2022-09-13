@@ -1,10 +1,9 @@
 .main-nav {
-    background-color: #222;
+    width: 100%;
 
     &__list {
         margin: 0;
         padding: 0;
-        background-color: pink;
         list-style-type: none;
         display: flex;
         flex-direction: column;
@@ -20,7 +19,6 @@
 
     &__link {
         display: block;
-        background-color: orange;
         padding: 1em .7em;
         color: #222;
         font-size: 1.2em;
@@ -28,8 +26,9 @@
 
         &:hover,
         &:focus {
-            background-color: orangered;
+            background-color: #00B4D8;;
             outline: none;
+            transition: 0.2s ease;
         }
 
         @media (min-width: 768px) {

@@ -1,4 +1,5 @@
 // abstracts
+@use "abstracts/variables";
 
 // vendors
 @use 'vendors/normalize';
@@ -6,6 +7,8 @@
 // base
 @use 'base/reset';
 @use 'base/utilities';
+@use 'base/typography';
+@use 'base/fonts';
 
 // layout
 @use 'layout/hamburger-button';

@@ -3,8 +3,9 @@
     flex-wrap: wrap;
     border-bottom: 2px solid #00B4D8;
     color: #666;
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     // z-index: 2 para asegurarme que el header se muestre por encima de todo
     // (en el z-index 1 está el .card::before)
     z-index: 2;

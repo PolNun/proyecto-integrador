@@ -23,7 +23,6 @@
     &__image-container {
         height: 300px;
         width: 250px;
-        background-color: red;
         border-radius: 9px;
         margin-bottom: 1rem;
     }
@@ -33,11 +32,17 @@
         width: 250px;
         object-fit: cover;
     }
-
+    
     &__heading {
         font-size: 1.5rem;
         font-weight: 700;
         margin-bottom: 1rem;
+    }
+
+    &__description {
+        margin-bottom: 0.5rem;
+        min-height: min-content;
+        max-height: 6em;
     }
 
     &__button-container {
@@ -46,6 +51,10 @@
         margin-top: 1em;
         background-color: #F5F5F5;
         border-radius: 9px;
+        width: 100%;
+
+        @media (min-width: 768px) {
+        }
     }
 
     &__view-button {
@@ -97,7 +106,7 @@
         background-color: transparent;
 
         &:hover {
-            background-color: #F2B705;
+            background-color: #AE8200;
             color: #FFF;
         }
     }

@@ -53,13 +53,8 @@
             transition: 0.2s ease;
             width: 10ch;
 
-            @media (min-width: 768px) {
-                width: 20em;
-            }
-
             &:focus {
                 border-color: #00B4D8;
-                width: 10ch;
 
                 @media (min-width: 375px) {
                     width: 20ch;
@@ -90,7 +85,6 @@
             border-left: none;
             border-radius: 0 12px 12px 0;
             outline: none;
-            transition: 0.2s ease;
             color: inherit;
             cursor: pointer;
             background-color: #FFF;
@@ -108,7 +102,7 @@
     }
 
     &__cart-button-container {
-        padding: 1em;
+        padding: 1em 1.2em;
         color: inherit;
         font-size: 1.2em;
         display: flex;

@@ -11,8 +11,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: url("../img/banner/card-section__banner-img.jpg") no-repeat center center;
-        background-size: cover;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 
         &-title {
@@ -55,7 +53,15 @@
         }
     }
 
+    .space-img {
+        background-image: url("../img/banner/card-section__banner-img.jpg");
+        background-position: initial;
+        background-size: cover;
+    }
+
     .cloud-img {
         background-image: url("../img/banner/cloud-banner2.jpg");
+        background-size: cover;
+        background-position: center;
     }
 }

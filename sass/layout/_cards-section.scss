@@ -10,9 +10,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: url(../../img/banner/card-section__banner-img.jpg);
+        background: url("../img/banner/card-section__banner-img.jpg") no-repeat center center;
         background-size: cover;
-        background-repeat: no-repeat;
 
         &-title {
             margin-bottom: 20px;
@@ -52,5 +51,9 @@
                 }
             }
         }
+    }
+
+    .cloud-img {
+        background-image: url("../img/banner/cloud-banner2.jpg");
     }
 }

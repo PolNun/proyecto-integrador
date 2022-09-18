@@ -1,5 +1,7 @@
 body {
-    background-color: #F9FEFE;
+    /* background-color: #F9FEFE; */
+    background: rgb(10, 65, 106);
+    background: linear-gradient(180deg, rgba(10, 65, 106, 1) 0%, rgba(29, 5, 87, 1) 0%, rgba(78, 134, 200, 1) 23%, rgba(197, 236, 255, 1) 55%, rgba(238, 246, 255, 1) 100%, rgba(81, 181, 154, 1) 100%);
 }
 
 .cards-container {

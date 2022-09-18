@@ -32,7 +32,7 @@
         width: 250px;
         object-fit: cover;
     }
-    
+
     &__heading {
         font-size: 1.5rem;
         font-weight: 700;
@@ -42,22 +42,29 @@
     &__description {
         margin-bottom: 0.5rem;
         min-height: min-content;
-        max-height: 6em;
+        max-height: 4em;
+        overflow: hidden;
+        background-color: #FFF;
+        border-radius: 9px;
+        padding: 4px 0;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            overflow: visible;
+        }
     }
 
     &__button-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-top: 1em;
         background-color: #F5F5F5;
         border-radius: 9px;
-        width: 100%;
-
-        @media (min-width: 768px) {
-        }
+        width: max-content;
     }
 
     &__view-button {
+        cursor: pointer;
         font-size: 1.5rem;
         font-weight: 700;
         padding: 1rem;
@@ -76,6 +83,7 @@
     }
 
     &__favorite-button {
+        cursor: pointer;
         font-size: 1.5rem;
         font-weight: 700;
         padding: 1rem;
@@ -94,6 +102,7 @@
     }
 
     &__sell-button {
+        cursor: pointer;
         font-size: 1.5rem;
         font-weight: 700;
         padding: 1rem;
@@ -127,3 +136,17 @@
         }
     }
 }
+
+/* .card:nth-child(even):before {
+    content: 'OFF';
+    position: relative;
+    top: 10px;
+    left: 210px;
+    padding: 0.5em;
+    border-radius: 9px;
+    background-color: #FFF;
+    border: 1px solid #85182A;
+    color: #85182A;
+    transition: all 0.2s ease-in-out;
+    z-index: 1;
+} */

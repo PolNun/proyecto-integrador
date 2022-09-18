@@ -2,33 +2,35 @@
     display: block;
     cursor: pointer;
     width: 2em;
-    height: 2em;
-    background-color: #222;
+    height: 1.8em;
+    background-color: #FFF;
     position: relative;
     border-radius: 0.2em;
+    transition: 0.2s ease;
 
-    &:hover {
-        background-color: #2A2A2A;
+    &:active {
+        height: 2em;
     }
 
     &__topbread {
         display: block;
         position: absolute;
         width: 80%;
-        height: 10%;
+        height: 0.15em;
         top: 20%;
         left: 10%;
-        background-color: #eee;
+        background-color: #666;
+        border-radius: 6px 6px 0 0;
     }
 
     &__middlebread {
         display: block;
         position: absolute;
         width: 80%;
-        height: 10%;
+        height: 0.15em;
         top: 50%;
         left: 10%;
-        background-color: #eee;
+        background-color: #666;
         transform: translateY(-50%);
     }
 
@@ -36,9 +38,10 @@
         display: block;
         position: absolute;
         width: 80%;
-        height: 10%;
+        height: 0.15em;
         bottom: 20%;
         left: 10%;
-        background-color: #eee;
+        background-color: #666;
+        border-radius: 0 0 6px 6px;
     }
 }

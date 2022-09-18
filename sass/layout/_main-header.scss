@@ -2,94 +2,122 @@
     display: flex;
     flex-wrap: wrap;
     border-bottom: 2px solid #00B4D8;
+    color: #666;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.95);
+
 
     &__logo-container {
-        display: flex;
-        justify-content: center;
-        padding: .5em;
         display: none;
 
         @media (min-width: 768px) {
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1em;
         }
 
         .logo-header {
             width: 3em;
-            filter: drop-shadow(0 0 0.3em #555);
+            filter: drop-shadow(0 0 0.2em #555);
+            cursor: pointer;
+
+            &:hover {
+                filter: hue-rotate(180deg) drop-shadow(0 0 0.2em #555);
+            }
         }
     }
 
     &__search-form-container {
+        display: flex;
         padding: 1em;
         flex-grow: 1;
+        justify-content: center;
+        order: 2;
 
         @media (min-width: 768px) {
-            order: 2;
             flex-grow: 0;
             flex-shrink: 1;
             display: flex;
             align-items: center;
         }
 
-        .search-form {
-            background-color: red;
-            
+        .search-form__input {
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-right: none;
+            border-radius: 12px 0 0 12px;
+            outline: none;
+            transition: 0.2s ease;
+            width: 10ch;
+
             @media (min-width: 768px) {
-                width: 100%;
-                padding: 0.8em;
+                width: 20em;
             }
 
-            .btn-search-product {
-                border: none;
-                cursor: pointer;
-                color: #444;
-                background-color: #FFF;
-                font-size: 1.2em;
-            }
+            &:focus {
+                border-color: #00B4D8;
+                width: 10ch;
 
-            &__input {
-                border: none;
-                border: 1px solid #00B4D8;
-                border-radius: 6px;
-                font-size: 1.2em;
-                outline: none;
-                font-weight: 500;
-                color: #444;
-                height: 1.5em;
-
-                &::placeholder {
-                    color: rgba(0, 0, 0, 0.4);
+                @media (min-width: 375px) {
+                    width: 20ch;
                 }
 
+                @media (min-width: 575px) {
+                    width: 25ch;
+                }
+
+                @media (min-width: 768px) {
+                    width: 30ch;
+                }
             }
 
+            &::placeholder {
+                font-size: 0.8em;
 
 
-
-
-
-
+                @media (min-width: 768px) {
+                    font-size: 1em;
+                }
+            }
         }
+
+        .search-form__button {
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-left: none;
+            border-radius: 0 12px 12px 0;
+            outline: none;
+            transition: 0.2s ease;
+            color: inherit;
+            cursor: pointer;
+            background-color: #FFF;
+
+            &:hover {
+                color: #00B4D8;
+            }
+
+            &:focus {
+                color: #00B4D8;
+                border-color: #00B4D8;
+            }
+        }
+
     }
 
     &__cart-button-container {
         padding: 1em;
-        color: #444;
+        color: inherit;
         font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        order: 3;
 
-        @media (min-width: 768px) {
-            order: 3;
-            display: flex;
-            align-items: center;
-        }
-    }
-
-    &__hamburger-button-container {
-        background-color: #47B;
-        padding: 1em;
-
-        @media (min-width: 768px) {
-            display: none;
+        &:hover {
+            color: #00B4D8;
         }
     }
 
@@ -103,6 +131,16 @@
             align-items: center;
             order: 1;
             flex-basis: auto;
+        }
+    }
+
+    &__hamburger-button-container {
+        padding: 1em;
+        display: flex;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            display: none;
         }
     }
 }

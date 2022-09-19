@@ -1,0 +1,105 @@
+.register-section__container {
+    grid-gap: 1em;
+    padding: 1em;
+    margin: 20px;
+    background-color: #FFF;
+    border-radius: 12px;
+    border: 2px solid #00B4D8;
+    transition: 0.2s ease;
+
+    span {
+        color: #DA1E37;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+
+        &:focus {
+            background-color: red;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            color: #222;
+        }
+
+        input {
+            margin: 0.5em 0 1em 0;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            outline: none;
+            color: inherit;
+            transition: 0.2s ease;
+            width: 100%;
+
+            &:focus {
+                border-color: #00B4D8;
+            }
+
+            &::placeholder {
+                font-size: 0.8em;
+            }
+        }
+
+        textarea {
+            margin: 0.5em 0 1em 0;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            outline: none;
+            color: inherit;
+            transition: 0.2s ease;
+            width: 100%;
+            resize: vertical;
+
+            &:focus {
+                border-color: #00B4D8;
+            }
+
+            &::placeholder {
+                font-size: 0.8em;
+            }
+        }
+
+        select {
+            margin: 0.5em 0 1em 0;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            outline: none;
+            color: inherit;
+            transition: 0.2s ease;
+            width: 100%;
+
+            &:focus {
+                border-color: #00B4D8;
+            }
+        }
+
+        &__age-range-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+            p {
+                width: 100%;
+                margin-bottom: 0.5em;
+                font-weight: 600;
+            }
+            
+            .age-range {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                overflow-x: scroll;
+
+                .age-range__input {
+                    width: 5ch;
+                }
+            }
+        }
+    }
+}

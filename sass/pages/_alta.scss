@@ -1,3 +1,18 @@
+.register-section__title {
+    text-align: center;
+    font-weight: 800;
+    color: #FFF;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    background-color: #00B4D821;
+    padding: 10px 0;
+}
+
 .register-section {
     transform: translateY(100px);
+    margin-bottom: 100px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 50px;
+    }
 }

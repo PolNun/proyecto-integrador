@@ -15,7 +15,7 @@
 @use 'layout/main-header';
 @use 'layout/main-nav';
 @use 'layout/main-nav-toggle';
-@use 'layout/cards-section';
+@use 'layout/wavy-svg';
 @use 'layout/footer';
 
 // components
@@ -24,5 +24,6 @@
 
 // pages
 @use 'pages/index';
+@use 'pages/alta';
 
 // themes

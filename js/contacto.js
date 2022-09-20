@@ -17,6 +17,7 @@ function genericRegexValidation(regex, input) {
     } else {
         input.style.borderColor = "#dc3545";
         btnSubmit.classList.add("disabled");
+        input.classList.add("is-invalid");
     }
 
     if (input.value === "") input.style.borderColor = "#ccc";

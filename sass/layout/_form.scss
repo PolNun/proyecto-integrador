@@ -13,7 +13,15 @@
 
     @media (min-width: 768px) {
         padding: 2em;
-        margin: 40px;
+        margin: 40px 100px 0 100px;
+    }
+
+    @media (min-width: 1024px) {
+        margin: 40px 200px 0 200px;
+    }
+
+    @media (min-width: 1200px) {
+        margin: 40px 300px 0 300px;
     }
 
     span {
@@ -130,4 +138,9 @@
             }
         }
     }
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
 }

@@ -60,23 +60,23 @@
             <div class="register-section__container">
                 <form class="form-group">
                     <div class="form-group__input-container">
-                        <label class="form-group__label" for="input-name">Nombre</label>
+                        <label class="form-group__label" for="input-name">Nombre<sup>*</sup></label>
                         <input class="form-group__input" type="text" id="input-name" placeholder="Nombre Apellido" required>
                     </div>
                     <div class="form-group__input-container">
-                        <label class="form-group__label" for="input-email">Email</label>
+                        <label class="form-group__label" for="input-email">Email<sup>*</sup></label>
                         <input class="form-group__input" type="email" id="input-email" placeholder="email@ejemplo.com" required>
                     </div>
                     <div class="form-group__input-container">
-                        <label class="form-group__label" for="input-phone">Teléfono</label>
-                        <input class="form-group__input" type="tel" id="input-phone" placeholder="000 111 2222" required>
+                        <label class="form-group__label" for="input-phone">Teléfono (sin el «+54 9 15»)</label>
+                        <input class="form-group__input" type="tel" id="input-phone" placeholder="01112223333">
                     </div>
                     <div class="form-group__input-container">
-                        <label class="form-group__label" for="input-message">Mensaje</label>
+                        <label class="form-group__label" for="input-message">Mensaje<sup>*</sup></label>
                         <textarea class="form-group__input" id="input-message" placeholder="Mensaje" required></textarea>
                     </div>
                     <div class="form-group__button-container">
-                        <button class="form-group__button">Enviar</button>
+                        <button class="form-group__button disabled" id="btn-submit" type="submit">Enviar</button>
                     </div>
 
                 </form>
@@ -120,6 +120,7 @@
     </footer>
     <!-- /footer -->
 
+    <script src="js/contacto.js"></script>
     <script src="https://kit.fontawesome.com/48e10fc4fc.js" crossorigin="anonymous"></script>
 </body>
 

@@ -88,16 +88,16 @@
                         <p>Rango de edad</p>
                         <div class="age-range">
                             <label class="age-range__label" for="input-product-age-from">Edad desde<sup>*</sup></label>
-                            <input class="age-range__input" type="number" name="input-product-age-from"
-                                id="input-product-age-from" placeholder="3" required>
+                            <input class="age-range__input" type="number" name="input-minimum-age"
+                                id="input-minimum-age" placeholder="3" required>
                             <label class="age-range__label" for="input-product-age-to">Edad hasta<sup>*</sup></label>
-                            <input class="age-range__input" type="number" name="input-product-age-to"
-                                id="input-product-age-to" placeholder="100" required>
+                            <input class="age-range__input" type="number" name="input-maximum-age"
+                                id="input-maximum-age" placeholder="100" required>
                         </div>
                     </div>
 
                     <div class="form-group__product-price">
-                        <label for="input-product-price">Precio<sup>*</sup></label>
+                        <label for="input-product-price">Precio (en ARS)<sup>*</sup></label>
                         <input type="number" name="input-product-price" id="input-product-price"
                             placeholder="Precio del producto" required>
                     </div>
@@ -110,7 +110,7 @@
 
                     <div class="form-group__product-category">
                         <label for="input-product-category">Categoría<sup>*</sup></label>
-                        <select name="input-product-category" id="input-product-category" required>
+                        <select name="input-product-category" id="input-product-category">
                             <option value="1">Madera</option>
                             <option value="2">De mesa</option>
                             <option value="3">Deportes</option>
@@ -126,13 +126,13 @@
 
                     <div class="form-group__product-delivery">
                         <label for="input-product-delivery">Envío sin cargo<sup>*</sup></label>
-                        <select name="input-product-delivery" id="input-product-delivery" required>
+                        <select name="input-product-delivery" id="input-product-delivery">
                             <option value="1">Sí</option>
                             <option value="2">No</option>
                         </select>
                     </div>
                     <div class="form-group__send-button">
-                        <button type="submit">Enviar</button>
+                        <button id="btn-submit" type="submit">Enviar</button>
                     </div>
                 </form>
                 <span><sup>*</sup> Campo obligatorio</span>
@@ -151,7 +151,7 @@
     <footer class="main-footer">
         <div class="main-footer__container">
             <div class="main-footer__logo">
-                <a href="index.html" class="main-footer__logo-link">
+                <a href="#" class="main-footer__logo-link">
                     <img src="img/logo/logo-cosmica-small.svg" alt="Logo" class="main-footer__logo-image">
                 </a>
             </div>
@@ -175,6 +175,7 @@
     </footer>
     <!-- /footer -->
 
+    <script src="js/alta.js"></script>
     <script src="https://kit.fontawesome.com/48e10fc4fc.js" crossorigin="anonymous"></script>
 </body>
 

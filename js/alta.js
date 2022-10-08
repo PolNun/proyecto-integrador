@@ -19,20 +19,137 @@ const btnSubmit = document.getElementById("btn-submit");
 // obteniendo del DOM los inputs de edad mínima y máxima JUNTOS
 const inputsAge = document.querySelectorAll(".age");
 
+debugger;
 function genericRegexValidation(regex, input) {
-    if (regex.test(input.value)) {
-        input.style.borderColor = "#28a745";
-        btnSubmit.classList.remove("disabled");
-    } else {
-        input.style.borderColor = "#dc3545";
-        btnSubmit.classList.add("disabled");
-        input.classList.toggle("is-invalid");
-    }
+    if (input.value.trim()) {
+        if (regex.test(input.value)) {
+            input.style.borderColor = "#28a745";
+            btnSubmit.classList.remove("disabled");
+        } else {
+            input.style.borderColor = "#dc3545";
+            btnSubmit.classList.add("disabled");
+            input.classList.toggle("is-invalid");
+        }
 
-    if (input.value === "") input.style.borderColor = "#ccc";
+        if (input.value === "") input.style.borderColor = "#ccc"
+        if (input.type === "number") {
+            if (inputMinimumAge.value < 0 || inputMaximumAge.value < 0) input.style.borderColor = "#dc3545";
+            if (inputMinimumAge.value > inputMaximumAge.value) input.style.borderColor = "#dc3545";
+        }
 
-    if (input.type == "number") {
-        if (inputMinimumAge.value < 0) input.style.borderColor = "#dc3545";
+        // switch (input) {
+        //     case inputProductBrand: {
+        //         if (input.value.trim()) {
+        //             if (regex.test(input.value)) {
+        //                 input.style.borderColor = "#28a745";
+        //                 btnSubmit.classList.remove("disabled");
+        //             } else {
+        //                 input.style.borderColor = "#dc3545";
+        //                 btnSubmit.classList.add("disabled");
+        //                 input.classList.toggle("is-invalid");
+        //             }
+        //         }
+        //         if (input.value === "") input.style.borderColor = "#ccc";
+        //         break;
+        //     }
+        //     case inputProductName: {
+        //         if (input.value.trim()) {
+        //             if (regex.test(input.value)) {
+        //                 input.style.borderColor = "#28a745";
+        //                 btnSubmit.classList.remove("disabled");
+        //             } else {
+        //                 input.style.borderColor = "#dc3545";
+        //                 btnSubmit.classList.add("disabled");
+        //                 input.classList.toggle("is-invalid");
+        //             }
+        //         }
+        //         if (input.value === "") input.style.borderColor = "#ccc";
+        //         break;
+        //     }
+        //     case inputProductShortDesc: {
+        //         if (input.value.trim()) {
+        //             if (regex.test(input.value)) {
+        //                 input.style.borderColor = "#28a745";
+        //                 btnSubmit.classList.remove("disabled");
+        //             } else {
+        //                 input.style.borderColor = "#dc3545";
+        //                 btnSubmit.classList.add("disabled");
+        //                 input.classList.toggle("is-invalid");
+        //             }
+        //         }
+        //         if (input.value === "") input.style.borderColor = "#ccc";
+        //         break;
+        //     }
+        //     case inputProductLongDesc: {
+        //         if (input.value.trim()) {
+        //             if (regex.test(input.value)) {
+        //                 input.style.borderColor = "#28a745";
+        //                 btnSubmit.classList.remove("disabled");
+        //             } else {
+        //                 input.style.borderColor = "#dc3545";
+        //                 btnSubmit.classList.add("disabled");
+        //                 input.classList.toggle("is-invalid");
+        //             }
+        //         }
+        //         if (input.value === "") input.style.borderColor = "#ccc";
+        //         break;
+        //     }
+        //     case inputMinimumAge: {
+        //         if (regex.test(input.value)) {
+        //             input.style.borderColor = "#28a745";
+        //             btnSubmit.classList.remove("disabled");
+        //         } else {
+        //             input.style.borderColor = "#dc3545";
+        //             btnSubmit.classList.add("disabled");
+        //             input.classList.toggle("is-invalid");
+        //         }
+        //         if (input.value === "") input.style.borderColor = "#ccc";
+        //         break;
+        //     }
+        //     case inputMaximumAge: {
+        //         if (regex.test(input.value)) {
+        //             input.style.borderColor = "#28a745";
+        //             btnSubmit.classList.remove("disabled");
+        //         } else {
+        //             input.style.borderColor = "#dc3545";
+        //             btnSubmit.classList.add("disabled");
+        //             input.classList.toggle("is-invalid");
+        //         }
+        //         if (input.value === "") input.style.borderColor = "#ccc";
+        //         break;
+        //     }
+        //     case inputProductPrice: {
+        //         if (input.value.trim()) {
+        //             if (regex.test(input.value)) {
+        //                 input.style.borderColor = "#28a745";
+        //                 btnSubmit.classList.remove("disabled");
+        //             } else {
+        //                 input.style.borderColor = "#dc3545";
+        //                 btnSubmit.classList.add("disabled");
+        //                 input.classList.toggle("is-invalid");
+        //             }
+        //         }
+        //         if (input.value === "") input.style.borderColor = "#ccc";
+        //         break;
+        //     }
+        //     case inputProductStock: {
+        //         if (input.value.trim()) {
+        //             if (regex.test(input.value)) {
+        //                 input.style.borderColor = "#28a745";
+        //                 btnSubmit.classList.remove("disabled");
+        //             } else {
+        //                 input.style.borderColor = "#dc3545";
+        //                 btnSubmit.classList.add("disabled");
+        //                 input.classList.toggle("is-invalid");
+        //             }
+        //         }
+        //         if (input.value === "") input.style.borderColor = "#ccc";
+        //         break;
+        //     }
+        //     default: {
+        //         break;
+        //     }
+        // }
     }
 
     if (inputMinimumAge.value > inputMaximumAge.value) {
@@ -54,3 +171,5 @@ inputsAge.forEach(input => {
         genericRegexValidation(regexMaximumAge, inputMaximumAge);
     })
 });
+
+console.log(__dirname);
